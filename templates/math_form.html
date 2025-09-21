@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <body>
+    <h1>Assignment #3 – Input</h1>
+    <form method="post" action="/result/">
+      {% csrf_token %}
+      <label>X: <input name="x" type="number" step="any" required></label><br>
+      <label>Y: <input name="y" type="number" step="any" required></label><br>
+      <label>Z: <input name="z" type="number" step="any" required></label><br>
+      <button type="submit">Calculate</button>
+    </form>
+  </body>
+</html>
+

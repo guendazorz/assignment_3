@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <body>
+    <h1>Python Script Result</h1>
+
+    <h3>Original Values:</h3>
+    <pre>x: {{ orig.x }}\ny: {{ orig.y }}\nz: {{ orig.z }}</pre>
+
+    <h3>Calculation Steps:</h3>
+    <ul>
+      {% for s in steps %}<li>{{ s }}</li>{% endfor %}
+    </ul>
+
+    <h3>Result:</h3>
+    <p>x + y + z = {{ final }}</p>
+  </body>
+</html>
